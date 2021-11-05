@@ -4,23 +4,20 @@
       color="transparent"
       fixed
     >
-      <img src="../photos/anthonymovie.png" alt="" height="80%" class="ma-2">
+      <img src="../photos/logo_pets.png" alt="" height="95%" class="ma-2" style="margin:100px">
 
       <v-btn
         text
-        :key="1"
       >
         About
       </v-btn>
       <v-btn
         text
-        :key="1"
       >
         New Flim
       </v-btn>
       <v-btn
         text
-        :key="1"
       >
         Infor
       </v-btn>
@@ -65,94 +62,8 @@
       <!--  -->
     </v-navigation-drawer>
 
-    <v-main class="grey lighten-2">
-      <v-carousel hide-delimiters height="100vh">
-        <v-carousel-item
-          v-for="(item,i) in items"
-          :key="i"
-          :src="item.src"
-        ></v-carousel-item>
-      </v-carousel>
-      <v-container >
-        <v-row color="grey darken-3">
-          <template >
-            <v-col
-              class="mt-2"
-              cols="12"
-            >
-              <strong>Category 2</strong>
-            </v-col>
+    <Nuxt />
 
-            <v-col
-              v-for="j in 6"
-              :key="j"
-              cols="6"
-              md="2"
-            >
-              <v-sheet height="150" align="center" justify="center" class="fill-height"> hello</v-sheet>
-            </v-col>
-          </template>
-        </v-row>
-      </v-container>
-      <v-card color="blue-grey" height="100vh" >
-        <v-card-text>
-          hellowrd
-        </v-card-text>
-        
-      </v-card>
-      <v-container >
-        <v-row color="grey darken-3">
-          <template >
-            <v-col
-              class="mt-2"
-              cols="12"
-            >
-              <strong>Category 2</strong>
-            </v-col>
-
-            <v-col
-              v-for="j in 6"
-              :key="j"
-              cols="6"
-              md="2"
-            >
-              <v-sheet height="150" align="center" justify="center" class="fill-height"> hello</v-sheet>
-            </v-col>
-          </template>
-        </v-row>
-      </v-container>
-      <v-card  >
-        <v-card-text>
-          hellowrd
-        </v-card-text>
-        
-      </v-card>
-      <v-container >
-        <v-row color="grey darken-3">
-          <template >
-            <v-col
-              class="mt-2"
-              cols="12"
-            >
-              <strong>Category 2</strong>
-            </v-col>
-
-            <v-col
-              v-for="j in 6"
-              :key="j"
-              cols="6"
-              md="2"
-            >
-              <v-sheet height="150" align="center" justify="center" class="fill-height"> hello</v-sheet>
-            </v-col>
-          </template>
-        </v-row>
-      </v-container>
-    </v-main>
-    
-    <v-main>
-
-    </v-main>
     <v-footer
       padless
       width="100vw"
@@ -167,7 +78,7 @@
       >
       <v-row align="center" justify="center" width="auto" d-block>
 
-        <img src="../photos/anthonymovie.png" alt="" height="80px" class="ma-2">
+        <img src="../photos/Logo pets.png" alt="" height="80px" class="ma-5">
         <div  style="width: 40vw; margin: 16px">
           
         <v-card-text class="white--text pt-0 mt-3" >
@@ -190,20 +101,6 @@
   export default {
     data: () => ({ 
       drawer: null,
-      items: [
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
-          },
-        ],
       icons: [
       'mdi-facebook',
       'mdi-twitter',

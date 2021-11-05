@@ -1,77 +1,126 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+    <v-main class="black" >
+      
+      <v-card 
+      style="height:100vh; width: 100vw; overflow:hidden; position: relative"  
+      class="d-flex flex-column justify-end"
+      >
+        <v-img 
+        src="https://cdn.mos.cms.futurecdn.net/VQxFwgrZNNFJwo7pCtMesD.jpg" 
+        width="100vw"
+        height="100%"
+        style="position:absolute"
+        alt=""
+        >
+        </v-img>
+        <v-card 
+        style="position:relative;" 
+        class="text-capitalize ma-10 white--text font-weight-black d-flex flex-column justify-end" 
+        align-self="end" 
+        color="transparent"
+        flat
+        >
+          <v-col>
+          <div class="text-h4 font-weight-black">
+
+          War for the Planet of the Apes
           </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
+          <div style="width:50%">
+            Deep in the Muir woods, soldiers stalk through accompanied by a band deserter Apes, each identified with Donkey inscribed on their backs and slogans such as Monkey Killer on their helmets.  They also have AΩ branded on their foreheads to identify them as part of the alpha-omega devision.
+          </div>
           <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
+            color="error"
           >
-            Continue
+            Get Infor
           </v-btn>
-        </v-card-actions>
+          </v-col>
+        </v-card>
       </v-card>
-    </v-col>
-  </v-row>
+      
+      <v-container >
+        <v-row color="grey darken-3">
+          <template >
+            <v-col
+              class="mt-2"
+              cols="12"
+            >
+              <strong>Category 2</strong>
+            </v-col>
+
+            <v-col
+              v-for="j in 6"
+              :key="j"
+              cols="6"
+              md="2"
+            >
+              <v-sheet height="150" align="center" justify="center" class="fill-height"> hello</v-sheet>
+            </v-col>
+          </template>
+        </v-row>
+      </v-container>
+      <v-card color="blue-grey" height="100vh" >
+        <v-card-text>
+          hellowrd
+        </v-card-text>
+        
+      </v-card>
+      <v-container >
+        <v-row color="grey darken-3">
+          <template >
+            <v-col
+              class="mt-2"
+              cols="12"
+            >
+              <strong>Category 2</strong>
+            </v-col>
+
+            <v-col
+              v-for="j in 6"
+              :key="j"
+              cols="6"
+              md="2"
+            >
+              <v-sheet height="150" align="center" justify="center" class="fill-height"> hello</v-sheet>
+            </v-col>
+          </template>
+        </v-row>
+      </v-container>
+      <v-card  >
+        <v-card-text>
+          hellowrd
+        </v-card-text>
+        
+      </v-card>
+      <v-container >
+        <v-row color="grey darken-3">
+          <template >
+            <v-col
+              class="mt-2"
+              cols="12"
+            >
+              <strong>Category 2</strong>
+            </v-col>
+
+            <v-col
+              v-for="j in 6"
+              :key="j"
+              cols="6"
+              md="2"
+            >
+              <v-sheet height="150" align="center" justify="center" class="fill-height"> hello</v-sheet>
+            </v-col>
+          </template>
+        </v-row>
+      </v-container>
+    </v-main>
 </template>
+
+<script>
+export default {
+  computed:{
+    header() {
+      return this.$store.state.post.basic
+    }
+  },
+}
+</script>
